@@ -1,4 +1,4 @@
-﻿# GitHub 协作步骤
+# GitHub 协作步骤
 
 ## 仓库设置
 
@@ -6,18 +6,9 @@
 
 保持私有，变更需队内明确决定。通过 Settings → Collaborators 邀请成员真实账号，P1/P2/P3 只是代号。以下为团队约定，尚未配置 GitHub 分支保护、强制审核或 CI，不得宣称平台已强制执行。
 
-## 分支与审阅
+## 日常协作
 
-main 保存经审阅的集成版本。日常使用短期任务分支和 PR，不直接推送 main。
-
-| 工作 | 分支示例 | 主责 | 审阅 |
-|---|---|---|---|
-| 数据/Q1 | p1/data-audit、p1/q1-baseline | P1 | P2 |
-| Q2/Q4 | p2/q2-propagation、p2/q4-scenarios | P2 | P3 |
-| Q3/论文 | p3/q3-response、p3/paper-integration | P3 | P1 |
-| 共享文档 | docs/project-framework | 当前负责人 | 非作者成员 |
-
-至少一名非作者真实审核；跨模块接口与综合主结论三人共同确认，不虚构批准。代号用于分支，不伪造 Git 作者。
+团队任务和截止日期只见 [TEAM_PLAN.md](docs/TEAM_PLAN.md)。按任务使用短期分支，需要讨论合并时使用 PR；不设置固定审核角色。分支名可用 p1/data-audit 等易懂名称。
 
 ## 克隆后准备
 
@@ -55,4 +46,4 @@ git push -u origin p1/data-audit
 
 供审核的精简汇总及运行元数据放 experiments/reports/，不复制原始逐条记录和个人资料。完整产物通过队内私有渠道传递，核对运行 ID/哈希。仓库不替代赛事提交。
 
-研究分工见 [TEAM_ROLES.md](docs/TEAM_ROLES.md)。
+数据接口见 [TEAM_ROLES.md](docs/TEAM_ROLES.md)。

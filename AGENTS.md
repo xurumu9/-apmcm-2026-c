@@ -4,10 +4,12 @@
 
 ## 开始工作
 
-- 阅读 README.md、docs/PROJECT_PLAN.md、docs/TEAM_ROLES.md、docs/MODELING_DECISIONS.md 和 data/README.md；改协作流程另读 GITHUB_WORKFLOW.md。
+- 阅读 README.md、docs/TEAM_PLAN.md、docs/PROJECT_PLAN.md、docs/TEAM_ROLES.md、docs/MODELING_DECISIONS.md 和 data/README.md；改协作流程另读 GITHUB_WORKFLOW.md。
 - 检查 Git 状态和现有实现，优先 rg 搜索，不覆盖成员未提交修改。
 - P1/P2/P3 是人类成员。本文件不授权子代理，未经用户明确要求不启动多代理任务。
 - 普通编辑不自动授权提交、推送、合并 PR 或权限变更；外部操作以用户已授权范围为准。
+
+- 团队分工与排期只维护 docs/TEAM_PLAN.md，每项任务一名成员；不另建分工、角色、状态、Issues、Milestones 或 Project Board，除非用户随后明确要求。TEAM_ROLES.md 仅保留数据接口。
 
 ## 数据和诚信
 

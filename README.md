@@ -1,4 +1,4 @@
-﻿# 2026 APMCM Problem C
+# 2026 APMCM Problem C
 
 非洲企鹅海上声学通信与回放响应建模项目。
 
@@ -10,19 +10,20 @@
 
 | 文档 | 用途 |
 |---|---|
-| [总体研究计划](docs/PROJECT_PLAN.md) | 四问依赖、里程碑和验收 |
-| [成员分工与接口](docs/TEAM_ROLES.md) | P1/P2/P3 职责和交付契约 |
+| [团队任务计划（统一入口）](docs/TEAM_PLAN.md) | 每项任务的工作、成员、截止日期和交付成果 |
+| [总体研究框架](docs/PROJECT_PLAN.md) | 四问依赖与研究要求 |
+| [数据接口](docs/TEAM_ROLES.md) | 已有格式与交付路径，不另列分工 |
 | [模型决策记录](docs/MODELING_DECISIONS.md) | 候选模型、选择依据和假设 |
 | [数据字典与审计](data/README.md) | 字段、缺失、冲突和处理状态 |
 | [GitHub 协作](GITHUB_WORKFLOW.md) | 可见性、分支和 PR |
 | [Codex 工作规范](AGENTS.md) | AI 操作、验证与交付约定 |
 | [AI 使用记录](AI_usage/README.md) | 关键交互、采纳与人工核验 |
 
-默认分工待队内确认：P1 数据/Q1，P2 Q2/Q4，P3 Q3/论文；实际赛事提交人待指定。
+三个人的任务及日期只在 [TEAM_PLAN.md](docs/TEAM_PLAN.md) 维护。
 
 ## 目录
 
-- docs/：总体计划、成员接口和模型决策。
+- docs/：共享任务计划、研究框架、数据接口和模型决策。
 - problem/：题面、补充说明和提交规范。
 - literature/：后续查阅的论文、参考资料及来源记录。
 - data/raw/：原始 CSV、音视频，保持原始内容和文件名。
@@ -58,10 +59,10 @@ AI 规定来源：https://m.saikr.com/contest/notice_detail/50212 （2026-11-04 
 
 ## 开始研究
 
-1. 阅读计划、分工和数据字典，确认模块。
+1. 查看 TEAM_PLAN.md 的任务与日期，并阅读对应研究方案和数据字典。
 2. 恢复本地附件并统一审计规则，再实现基线。
 3. 默认 Python，按需建立模块；可靠 MATLAB 实现按共同 CSV 接口交付。实际引入依赖时记录版本，目前没有模型入口。
-4. 从最新 main 建任务分支，交付代码、实验记录、精简结果和章节说明，经审阅后合并。
+4. 从最新 main 建任务分支，交付代码、实验记录、精简结果和章节说明，按需通过 PR 合并。
 
 results/q1/ 至 results/q4/ 是后续本地路径，尚未生成；供审核的精简汇总和元数据放 experiments/reports/，不复制逐条原始记录。
 
