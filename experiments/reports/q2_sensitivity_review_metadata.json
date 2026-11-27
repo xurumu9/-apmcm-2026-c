@@ -1,0 +1,13 @@
+{
+  "run_id": "q2_sensitivity_review_v1",
+  "python": "3.12.14",
+  "numpy": "2.5.5",
+  "matplotlib": "3.11.2",
+  "script_sha256": "08718867472bf65aded34c95502edad6eb796e68e2ad633d826dc2765355e67c",
+  "model_script_sha256": "f8725a10e9dfe61f2da8e49d3d2307830bb012c6f216ffe8e934540abeead199",
+  "input_missing_sha256": "d14d718462b697a9fbe68dc1d81cbca9c539efe3c80969878d55e463e831a7da",
+  "input_weights_sha256": "25eb7cec0eff5c959108189b321229a173f6eff59e3e4cc45643d23b9b24fd99",
+  "random_seed": null,
+  "interval": "deterministic stress scenarios; not confidence interval",
+  "status": "AI-generated, not team-reviewed"
+}
