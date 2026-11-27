@@ -1,0 +1,11 @@
+{
+  "run_id": "q2_dispersion_v1",
+  "input_sha256": "f76f9647689efcd2b105390627b41eb7d24828d98df03ffcda9a4f82cea0724c",
+  "script_sha256": "a5dd147a2f8d4426e766d817b569962e636a2a3941bf13475613821794dcde90",
+  "python": "3.12.14",
+  "matplotlib": "3.11.2",
+  "error_bars": "sample SD; not a confidence interval",
+  "x_scale": "log2",
+  "group_count": 63,
+  "random_seed": null
+}
