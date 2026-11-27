@@ -7,6 +7,7 @@
 *.cls text eol=lf
 *.cfg text eol=lf
 *.csv text eol=lf
+/data/processed/propagation_long.csv -text whitespace=cr-at-eol
 *.png binary
 *.jpg binary
 *.jpeg binary

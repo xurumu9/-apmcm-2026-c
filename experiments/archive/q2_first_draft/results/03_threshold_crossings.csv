@@ -1,0 +1,10 @@
+﻿call,threshold,status,first_crossing_m,all_crossings_m
+flat,0.5,within_range,89.89795666512302,89.90
+flat,0.6,within_range,62.9459607585224,62.95
+flat,0.7,within_range,36.638824947933784,36.64
+mod,0.5,within_range,150.47105267019853,150.47
+mod,0.6,within_range,113.9802301287848,113.98
+mod,0.7,within_range,84.04477844647477,84.04
+tv,0.5,within_range,180.1034621094923,180.10
+tv,0.6,within_range,146.23763766777247,146.24
+tv,0.7,within_range,15.828281144051314,15.83; 18.44; 97.93

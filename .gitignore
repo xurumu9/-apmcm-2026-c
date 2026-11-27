@@ -53,10 +53,18 @@ slprj/
 /data/processed/**
 !/data/processed/**/
 !/data/processed/**/.gitkeep
+!/data/processed/propagation_long.csv
 /results/**
 !/results/**/
 !/results/**/.gitkeep
 !/results/README.md
+!/results/q2/candidate_distance_cv.csv
+!/results/q2/README.md
+!/results/q2/candidate_metadata.json
+!/results/q2/communication_ranges.csv
+!/results/q2/fidelity_grid.csv
+!/results/q2/missingness_extremes.csv
+!/results/q2/noise_scenarios.csv
 /paper/build/**
 !/paper/build/**/
 !/paper/build/**/.gitkeep
@@ -95,3 +103,6 @@ slprj/
 *.nav
 *.snm
 *.vrb
+
+# Historical exploration: local raw references are not tracked.
+/experiments/archive/q2_first_draft/data/**

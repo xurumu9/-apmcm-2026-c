@@ -66,5 +66,5 @@ AI 规定来源：https://m.saikr.com/contest/notice_detail/50212 （2026-11-04 
 
 results/q1/ 至 results/q4/ 是后续本地路径，尚未生成；供审核的精简汇总和元数据放 experiments/reports/，不复制逐条原始记录。
 
-实际仓库：[xurumu9/-apmcm-2026-c](https://github.com/xurumu9/-apmcm-2026-c)，保持 Private。
+实际仓库：[xurumu9/-apmcm-2026-c](https://github.com/xurumu9/-apmcm-2026-c)。2026-11-27 核实时为公开仓库；P2 对已生成结果的共享例外见 [Q2 结果说明](results/q2/README.md)。
 
