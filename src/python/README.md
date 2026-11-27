@@ -35,3 +35,15 @@ python src/python/q1_acoustic_tests.py
 ## flat / mod 特征比较
 
 运行 `python src/python/q1_flat_mod_features.py`，使用 NumPy、SciPy 比较六个共同特征的分布及秩二列效应量，计算渐近 Mann–Whitney 检验和按日期限制的标签置换检验。运行结果写入本地忽略的 `results/q1/flat_mod_feature_comparison.csv` 和元数据；重复运行覆盖同名文件。方法和独立性限制见 `experiments/reports/q1_flat_mod_features.md`。
+
+## 待判规则对照
+
+`python src/python/q1_selective_classification.py` 对照完整结构规则与“两项结构指标均未记录则待判”的规则，报告整体及各类覆盖率和覆盖样本的一致率。仅依赖标准库，并引用同目录的 `q1_structure_rule.py`；结果写入本地忽略的 `results/q1/selective_classification_counts.csv` 和元数据，重复运行会覆盖。待判规则未判定任何 flat，不能当作完整三分类器；两种规则均为同表探索，不能解释为未知音频的准确率。详见 `experiments/reports/q1_classification_comparison.md`。
+
+## CART 候选分类器
+
+`python src/python/q1_cart_classifier.py` 使用六个共同声学特征及 F02、PulseRate 记录指示，运行最大深度 3、叶节点最少 3 个样本的 CART，并报告按日期留一组及随机分层五折结果，输出本地忽略的 `results/q1/cart_classifier_metadata.json`。依赖 NumPy 与 scikit-learn，调用同目录 `q1_structure_rule.py` 的原始字段检查；结构记录指标的类别信息风险、模型选择和未知音频验证限制见 `experiments/reports/q1_cart_classifier.md`。
+
+`python src/python/q1_cart_feature_comparison.py` 对比共同特征、推导的频率比和带宽、条件记录数值的候选集合，同时进行外层按日期留一组和内层按日期分组的模型选择。结果写入本地忽略的 `results/q1/cart_feature_comparison_metadata.json`；方法、平分时优先级及限制见 `experiments/reports/q1_cart_feature_comparison.md`。依赖 NumPy 与 scikit-learn。
+
+`python src/python/q1_cart_fixed_gate.py` 验证先用 F02 记录状态判断 tv，再用 CART 判断 flat/mod 的探索方案。结果写入本地忽略的 `results/q1/cart_fixed_gate_metadata.json`；其结构规则在查看同一数据及误判后固定，且依赖 F02 记录状态，不能解释为未知录音的独立准确率，详见 `experiments/reports/q1_cart_fixed_gate.md`。
