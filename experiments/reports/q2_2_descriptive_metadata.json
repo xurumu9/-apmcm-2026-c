@@ -1,0 +1,20 @@
+{
+  "run_id": "q2_2_descriptive_v1",
+  "cleaning_version": "q2_1_v1",
+  "input_sha256": "491c1367495336265f40d98d5f4eb0f6d6db14a57873f977728cf6b26fd844d7",
+  "script_sha256": "d4ccc3eb2cab06b7b133be1c82954cfbb393a6f2f00a83081b115d60836ea0ed",
+  "python": "3.12.14",
+  "matplotlib": "3.11.2",
+  "distances_m": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "interval": "none",
+  "n_groups": 63,
+  "random_seed": null
+}
