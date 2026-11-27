@@ -1,0 +1,15 @@
+{
+  "run_id": "q2_weight_scenario_v1",
+  "source_sha256": "25eb7cec0eff5c959108189b321229a173f6eff59e3e4cc45643d23b9b24fd99",
+  "script_sha256": "1c76ef078f7fc27871e22e4abd1629564a0040d036d494cb1f10368cc719fa2e",
+  "python": "3.12.14",
+  "method": "isotonic",
+  "weight_schemes": [
+    "equal",
+    "spectrogram_priority",
+    "spectrum_priority",
+    "envelope_priority"
+  ],
+  "confidence_interval": false,
+  "sampling_uncertainty_estimated": false
+}
