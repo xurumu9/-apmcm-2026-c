@@ -1,0 +1,56 @@
+{
+  "run_id": "q2_candidates_v1",
+  "status": "AI-generated exploratory candidate; not team-approved",
+  "input_sha256": "02e24a179dae34a5428060e0ddcb885dcb718a153e2a0656eeadeeafe91d0201",
+  "script_sha256": "4ec96580eb8e5ac6d6c638567817f1f7c96ccbf50bd6c18165a32b0b4e9f695a",
+  "python": "3.12.14",
+  "numpy": "2.5.5",
+  "cleaning_version": "q2_1_v1",
+  "distance_domain_m": [
+    4,
+    256
+  ],
+  "tau_grid": [
+    4,
+    2048,
+    400
+  ],
+  "weights": {
+    "equal": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "spectrogram_priority": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "spectrum_priority": [
+      0.2,
+      0.6,
+      0.2
+    ],
+    "envelope_priority": [
+      0.2,
+      0.2,
+      0.6
+    ]
+  },
+  "thresholds": [
+    [
+      0.3,
+      "potential"
+    ],
+    [
+      0.5,
+      "recognition"
+    ],
+    [
+      0.7,
+      "reliable"
+    ]
+  ],
+  "random_seed": null,
+  "intervals": "unavailable; original recording dependencies not identifiable from tables"
+}
