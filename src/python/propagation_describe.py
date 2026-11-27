@@ -61,7 +61,8 @@ def main():
     REPORTS.mkdir(parents=True, exist_ok=True)
     FIGURES.mkdir(parents=True, exist_ok=True)
     with (REPORTS / 'q2_2_descriptive_summary.csv').open('w', encoding='utf-8', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=list(records[0]))
+        # Match the repository's *.csv eol=lf rule so hashes survive Git checkout.
+        writer = csv.DictWriter(f, fieldnames=list(records[0]), lineterminator='\n')
         writer.writeheader(); writer.writerows(records)
     lookup = {(r['call_type'], r['metric'], r['distance_m']): r for r in records}
     fig, axes = plt.subplots(1, 3, figsize=(13.5, 4.5), sharey=True, layout='constrained')
