@@ -2,7 +2,7 @@
   "run_id": "q2_candidates_v1",
   "status": "AI-generated exploratory candidate; not team-approved",
   "input_sha256": "02e24a179dae34a5428060e0ddcb885dcb718a153e2a0656eeadeeafe91d0201",
-  "script_sha256": "4ec96580eb8e5ac6d6c638567817f1f7c96ccbf50bd6c18165a32b0b4e9f695a",
+  "script_sha256": "f8725a10e9dfe61f2da8e49d3d2307830bb012c6f216ffe8e934540abeead199",
   "python": "3.12.14",
   "numpy": "2.5.5",
   "cleaning_version": "q2_1_v1",

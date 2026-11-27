@@ -95,9 +95,9 @@ def main():
                 for th,state in LEVELS:
                     x,status=crossing(grid,curve,th)
                     ranges.append([call,scenario,th,state,x,'','',status,'not_estimable_from_aggregate','AI_candidate_unreviewed'])
+                for d in range(4,257):
+                    grids.append([call,d,scenario,float(np.interp(d,grid,curve)),'','',wname,'not_estimable_from_aggregate','AI_candidate_unreviewed'])
                 if wname=='equal':
-                    for d in range(4,257):
-                        grids.append([call,d,scenario,float(np.interp(d,grid,curve)),'','',wname,'not_estimable_from_aggregate','AI_candidate_unreviewed'])
                     for reduction in (0,.05,.10,.15,.20):
                         for th in (.5,.6,.7):
                             x,status=crossing(grid,curve*(1-reduction),th)

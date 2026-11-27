@@ -35,6 +35,8 @@
 
 本地 `results/q2/fidelity_grid.csv` 和 `communication_ranges.csv` 包含候选的类型、距离、估计值、阈值、状态与明确为空的置信区间；`candidate_distance_cv.csv`、`noise_scenarios.csv` 供检查。噪声仅假设相似度相对下降 5%–20%，不是实测效应。结果目录按团队规则不上传，Git 中只有精简结果、代码和元数据。
 
+2026-11-27 更新：`fidelity_grid.csv` 已扩充为两个候选模型、四组权重、三类叫声在 4–256 m 整数距离的 6,072 行，便于 Q4 按明确情景读取；此前只有等权曲线。区间列仍留空，不把四组权重的范围伪装成 95% 区间。完整英文工作稿见 `q2_working_section_en.md`。
+
 仓库中的 `q2_candidate_weight_sensitivity.csv` 和 `q2_candidate_noise_sensitivity.csv` 分别包含各权重/模型下的汇总范围及假设噪声情景，可供队友先检查，无需上传原始数据。
 
 运行 `python src/python/q2_candidate_plot.py` 可生成 `figures/q2/q2_candidates.png`；黑点为等权观测均值，两条曲线是候选模型，灰色虚线为假设阈值 0.3、0.7，不显示置信区间。图表和模型均标明由 AI 生成、未经队伍审核；本次 Matplotlib 及输入哈希见 `q2_candidate_plot_metadata.json`。
