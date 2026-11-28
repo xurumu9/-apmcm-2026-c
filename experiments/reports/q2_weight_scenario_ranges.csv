@@ -1,0 +1,10 @@
+call_type,threshold,equal_weight_radius_m,equal_status,min_observed_scenario_m,min_status,max_observed_scenario_m,max_status,scenario_count,interpretation
+flat,0.3,169.14046829323755,within_range,127.93605888291802,within_range,185.6881292382271,within_range,4,weight_scenario_range_not_confidence_interval
+flat,0.5,89.89795666512305,within_range,62.86548877795977,within_range,101.04131678618191,within_range,4,weight_scenario_range_not_confidence_interval
+flat,0.7,36.63882494793381,within_range,21.917754950291954,within_range,51.65622742679339,within_range,4,weight_scenario_range_not_confidence_interval
+mod,0.3,235.00165832611788,within_range,223.37841078228692,within_range,241.56026338420153,within_range,4,weight_scenario_range_not_confidence_interval
+mod,0.5,150.47105267019853,within_range,120.87337939222641,within_range,166.78946483512075,within_range,4,weight_scenario_range_not_confidence_interval
+mod,0.7,81.91330408958395,within_range,26.993747569330186,within_range,95.89475290410012,within_range,4,weight_scenario_range_not_confidence_interval
+tv,0.3,247.83511099293202,within_range,227.24889286144375,within_range,,at_least_256m,4,weight_scenario_range_not_confidence_interval
+tv,0.5,180.10346210949234,within_range,154.2915297489962,within_range,194.46872463990692,within_range,4,weight_scenario_range_not_confidence_interval
+tv,0.7,83.75624616923184,within_range,10.004892740208756,within_range,128.33484626838634,within_range,4,weight_scenario_range_not_confidence_interval

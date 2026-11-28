@@ -1,0 +1,462 @@
+{
+  "run_id": "q2_1_audit_v1",
+  "cleaning_version": "q2_1_v1",
+  "script_sha256": "772c54488e693b3a78083f2e158ae0adeafdd56ef744dc6fafe501e22b0a4e70",
+  "python_version": "3.12.14",
+  "dependencies": "Python standard library",
+  "source_row_id": "1-based data row within the source CSV; not a pairing identifier",
+  "missing_rule": "empty, NA or NaN => missing; no imputation",
+  "distance_m": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "long_rows_including_missing": 18900,
+  "files": [
+    {
+      "file": "Data03_correlation1m_flat_call_spectrogram.csv",
+      "sha256": "a75ab6b2828ed7f7529151c9fb9ba253cf7ab37c7e59f232395adb4d8c43f045",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.624,
+          "max": 0.989
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.724,
+          "max": 0.983
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.741,
+          "max": 0.978
+        },
+        "32": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.68,
+          "max": 0.971
+        },
+        "64": {
+          "valid_n": 250,
+          "missing_n": 50,
+          "min": 0.587,
+          "max": 0.851
+        },
+        "128": {
+          "valid_n": 230,
+          "missing_n": 70,
+          "min": 0.26,
+          "max": 0.606
+        },
+        "256": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.051,
+          "max": 0.358
+        }
+      }
+    },
+    {
+      "file": "Data04_correlation1m_modulated_call_spectrogram.csv",
+      "sha256": "2934077adf9fc73a292c1598bc8960ed8aac0964f59dc5cf8aa644db504ac0c8",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.75,
+          "max": 0.958
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.724,
+          "max": 0.973
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.549,
+          "max": 0.97
+        },
+        "32": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.735,
+          "max": 0.912
+        },
+        "64": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.642,
+          "max": 0.915
+        },
+        "128": {
+          "valid_n": 230,
+          "missing_n": 70,
+          "min": 0.45,
+          "max": 0.816
+        },
+        "256": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.126,
+          "max": 0.436
+        }
+      }
+    },
+    {
+      "file": "Data05_correlation1m_twovoice_call_spectrogram.csv",
+      "sha256": "7b2caf853e081badf344336204ff1a348a9251185a8fc863597ccf56eeadbd86",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.693,
+          "max": 0.949
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.773,
+          "max": 0.954
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.609,
+          "max": 0.91
+        },
+        "32": {
+          "valid_n": 270,
+          "missing_n": 30,
+          "min": 0.687,
+          "max": 0.916
+        },
+        "64": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.754,
+          "max": 0.922
+        },
+        "128": {
+          "valid_n": 190,
+          "missing_n": 110,
+          "min": 0.63,
+          "max": 0.821
+        },
+        "256": {
+          "valid_n": 210,
+          "missing_n": 90,
+          "min": 0.215,
+          "max": 0.463
+        }
+      }
+    },
+    {
+      "file": "Data06_correlation1m_flat_call_amplitude_spectrum.csv",
+      "sha256": "3ad36a05550833806aa8eb9907ad17ef5c2ac2a49ee9360f14c60f4f6013bb64",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.696,
+          "max": 0.995
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.544,
+          "max": 0.983
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.763,
+          "max": 0.988
+        },
+        "32": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.335,
+          "max": 0.976
+        },
+        "64": {
+          "valid_n": 250,
+          "missing_n": 50,
+          "min": 0.498,
+          "max": 0.88
+        },
+        "128": {
+          "valid_n": 230,
+          "missing_n": 70,
+          "min": 0.299,
+          "max": 0.651
+        },
+        "256": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.059,
+          "max": 0.418
+        }
+      }
+    },
+    {
+      "file": "Data07_correlation1m_modulated_call_amplitude_spectrum.csv",
+      "sha256": "242c542f98a9220e37d4dbbc9919a623adc5313ad5d090d391cdc0822033cc14",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.743,
+          "max": 0.969
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.716,
+          "max": 0.982
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.524,
+          "max": 0.977
+        },
+        "32": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.708,
+          "max": 0.934
+        },
+        "64": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.628,
+          "max": 0.942
+        },
+        "128": {
+          "valid_n": 230,
+          "missing_n": 70,
+          "min": 0.46,
+          "max": 0.876
+        },
+        "256": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.137,
+          "max": 0.514
+        }
+      }
+    },
+    {
+      "file": "Data08_correlation1m_twovoice_call_amplitude_spectrum.csv",
+      "sha256": "0e30187ab35b9951c631b42d783b316e1c2bab8df5880f2a7245cc0b1625fdd5",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.658,
+          "max": 0.954
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.762,
+          "max": 0.957
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.551,
+          "max": 0.921
+        },
+        "32": {
+          "valid_n": 270,
+          "missing_n": 30,
+          "min": 0.663,
+          "max": 0.937
+        },
+        "64": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.751,
+          "max": 0.928
+        },
+        "128": {
+          "valid_n": 190,
+          "missing_n": 110,
+          "min": 0.665,
+          "max": 0.845
+        },
+        "256": {
+          "valid_n": 210,
+          "missing_n": 90,
+          "min": 0.248,
+          "max": 0.592
+        }
+      }
+    },
+    {
+      "file": "Data09_correlation1m_flat_call_envelope.csv",
+      "sha256": "99fcc427448d7abac15dcf097b73095a25942ab2094fbe2a8274b51da1293ed4",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.204,
+          "max": 0.946
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.16,
+          "max": 0.918
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.264,
+          "max": 0.887
+        },
+        "32": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.16,
+          "max": 0.881
+        },
+        "64": {
+          "valid_n": 250,
+          "missing_n": 50,
+          "min": 0.12,
+          "max": 0.578
+        },
+        "128": {
+          "valid_n": 230,
+          "missing_n": 70,
+          "min": 0.098,
+          "max": 0.417
+        },
+        "256": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.09,
+          "max": 0.331
+        }
+      }
+    },
+    {
+      "file": "Data10_correlation1m_modulated_call_envelope.csv",
+      "sha256": "100aac915d008ccc6775cd7b4b5ccbb3e65769c760b0dbacb42f617b6e09e771",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.474,
+          "max": 0.878
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.469,
+          "max": 0.887
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.405,
+          "max": 0.908
+        },
+        "32": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.318,
+          "max": 0.747
+        },
+        "64": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.413,
+          "max": 0.768
+        },
+        "128": {
+          "valid_n": 230,
+          "missing_n": 70,
+          "min": 0.124,
+          "max": 0.593
+        },
+        "256": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.099,
+          "max": 0.464
+        }
+      }
+    },
+    {
+      "file": "Data11_correlation1m_twovoice_call_envelope.csv",
+      "sha256": "7644f11053056cfc3e86db0ebce98001ee9e7d7ee428602101cf18acd083157c",
+      "data_rows": 300,
+      "by_distance": {
+        "4": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.402,
+          "max": 0.841
+        },
+        "8": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.398,
+          "max": 0.855
+        },
+        "16": {
+          "valid_n": 300,
+          "missing_n": 0,
+          "min": 0.22,
+          "max": 0.728
+        },
+        "32": {
+          "valid_n": 270,
+          "missing_n": 30,
+          "min": 0.264,
+          "max": 0.695
+        },
+        "64": {
+          "valid_n": 290,
+          "missing_n": 10,
+          "min": 0.44,
+          "max": 0.733
+        },
+        "128": {
+          "valid_n": 190,
+          "missing_n": 110,
+          "min": 0.336,
+          "max": 0.59
+        },
+        "256": {
+          "valid_n": 210,
+          "missing_n": 90,
+          "min": 0.083,
+          "max": 0.22
+        }
+      }
+    }
+  ]
+}
