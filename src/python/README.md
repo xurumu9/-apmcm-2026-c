@@ -47,3 +47,7 @@ python src/python/q1_acoustic_tests.py
 `python src/python/q1_cart_feature_comparison.py` 对比共同特征、推导的频率比和带宽、条件记录数值的候选集合，同时进行外层按日期留一组和内层按日期分组的模型选择。结果写入本地忽略的 `results/q1/cart_feature_comparison_metadata.json`；方法、平分时优先级及限制见 `experiments/reports/q1_cart_feature_comparison.md`。依赖 NumPy 与 scikit-learn。
 
 `python src/python/q1_cart_fixed_gate.py` 验证先用 F02 记录状态判断 tv，再用 CART 判断 flat/mod 的探索方案。结果写入本地忽略的 `results/q1/cart_fixed_gate_metadata.json`；其结构规则在查看同一数据及误判后固定，且依赖 F02 记录状态，不能解释为未知录音的独立准确率，详见 `experiments/reports/q1_cart_fixed_gate.md`。
+
+## 完整特征表和结构信息敏感性
+
+先运行 `q1_acoustic_tests.py`，再运行 `q1_feature_table.py`，汇总八个特征的分位数、有效与缺失数量及适用的检验；会校验现有统计结果与输入和代码版本。`q1_cart_fixed_gate.py` 生成基线后，运行 `q1_structure_sensitivity.py`，枚举测试阶段结构记录指示被翻转的假设情景；各项翻转概率不是实测检测错误率。详细边界、运行版本及输出见 `experiments/reports/q1_feature_table.md` 和 `experiments/reports/q1_structure_sensitivity.md`。这些脚本输出本地忽略的 `results/q1/` 下对应文件，重复运行会覆盖同名结果。
