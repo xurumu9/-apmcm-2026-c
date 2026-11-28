@@ -1,4 +1,28 @@
-# 第一问：结构判别规则
+# Python 代码入口
+
+## Q3正式交付入口（2026-11-28）
+
+最新正式口径为原标记278行；下面分阶段入口保留研究历史。先读[Q3交付与复用](../../docs/Q3_REPRODUCIBILITY.md)。刚克隆后可直接运行`python -B src/python/q3_delivery.py verify`审核共享汇总，不需要原始数据或科学依赖。
+
+运行科学代码用独立Python 3.12环境及根目录`requirements-q3.txt`；完整测试为`python -B -m unittest discover -s src/python -p 'test_q3*.py' -v`（需要正式Data02）。重放最终四步前先按清单恢复24项私有历史输入并执行`q3_delivery.py check-context`，通过后才执行`q3_delivery.py run-final`，输出新目录。没有声称仅克隆即可从零重跑所有历史实验。
+
+仓库共享Q4材料在`experiments/reports/q3_release/`；其中计数q和原V标记概率不相容的诊断必须保留，不将两模块拼成未经建立的联合分布。完整审计、原数据、逐条结果及NPZ仍只在本地，使用私有渠道按哈希恢复。
+
+## Q3：分阶段修订实现
+
+`q3_revised_models.py` 为阶段 1、2；`q3_count_latency_models.py` 为阶段 3、4，均保留 `q3_playback_analysis.py` 首轮基线。详细人群、模型、参数、已执行运行及验收见 [Q3 分阶段报告](../../experiments/reports/q3_staged_implementation.md)。
+
+从项目根运行 `python -B src/python/q3_count_latency_models.py 3` 或末尾改为 `4`。需先有正式 Data02 和冻结阶段 1 运行 `results/q3/q3_stage1_20261127T115630Z/`（行划分和口径依据），不能仅克隆框架就假定结果存在；每次执行创建独立结果目录。实际依赖与版本记录在运行 metadata，未自动安装或升级。自写似然检查：`python -B src/python/test_q3_likelihoods.py`。
+
+`q3_stage34_figures.py --counts <次数运行相对目录> --latency <潜伏期运行相对目录>` 只读取已有结果，在 `figures/q3/` 新建两张校准图。完整命令见报告。阶段 3、4 原表没有区间，阶段 6 独立交付区间，不覆盖它们。
+
+阶段 5 的受限入口：`python -B src/python/q3_duration_diagnostics.py`，可用 `--stage1 <阶段1运行相对目录>` 指定冻结接口；测试为 `python -B src/python/test_q3_duration_diagnostics.py`。每次新建审计/工作模型结果与图表目录。详见 [持续时间审计](../../experiments/reports/q3_duration_audit.md)。仅诊断筛选后正记录值，未核实 60 编码、不拟合正式精确/删失时长、不裁剪或改写原值；真实时长接口留空加原因。
+
+阶段 6：`python -B src/python/q3_uncertainty_delivery.py --replicates 500 --workers 2 --predictive-draws 100 --label full`，需正式数据及阶段 1、5 冻结产物，可分别传 `--stage1`/`--stage5`。输出新时间戳目录；2 个进程并行独立 Bootstrap，threadpoolctl 限制各进程 BLAS 为 1 线程，实际版本记 metadata。固定模型/规则重拟合，置信区间与未来边际预测分表，持续时间不补值。详见 [阶段 6 交付](../../experiments/reports/q3_uncertainty_delivery.md)。
+
+测试 `python -B src/python/test_q3_uncertainty_delivery.py`；对正式输出运行 `python -B src/python/verify_q3_uncertainty_run.py results/q3/<阶段6运行目录>` 独立重建区间并写验收结果。完整 Bootstrap 数组默认留在本地 results，不自动提交或推送。
+
+## 第一问：结构判别规则
 
 `q1_structure_rule.py` 计算 Data01 上结构判别规则与既有类别标签的一致情况。它只依赖 Python 标准库，不会修改原始数据。
 

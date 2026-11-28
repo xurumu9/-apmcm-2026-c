@@ -10,3 +10,6 @@
 *.png binary
 *.jpg binary
 *.jpeg binary
+
+# Preserve release checksums across Windows/Linux checkout and Git auto-CRLF.
+experiments/reports/q3_release/* text eol=lf

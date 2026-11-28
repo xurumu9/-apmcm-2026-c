@@ -1,0 +1,9 @@
+module,behavior,event_definition,model_n,event_n,complete_pair_n,call_type_specific_supported_pairs,primary,unit,time_population,semantics
+Pattern_and_Latency,HeadsUp,original_HeadsUpYesNo,278.0,68.0,139.0,flat30_mod20_tv39,True,probability_or_seconds,original_flag_one_only,P(original_HeadsUpYesNo=1_and_recorded_latency<=t)
+Latency_old_filtered_sensitivity,HeadsUp,original_HeadsUpYesNo,278.0,68.0,,,False,probability_or_seconds,,
+Pattern_and_Latency,Vocal,original_VocalYesNo_equals_post_gt_pre_in_this_file,278.0,81.0,139.0,flat30_mod20_tv39,True,probability_or_seconds,original_flag_one_only,P(final_original_VocalYesNo=1_and_recorded_VocalLatency<=t);not_first_baseline_crossing_time
+Latency_old_filtered_sensitivity,Vocal,original_VocalYesNo_equals_post_gt_pre_in_this_file,274.0,81.0,,,False,probability_or_seconds,,
+Pattern_and_Latency,Approach,original_ApproachYesNo,278.0,23.0,139.0,flat30_mod20_tv39,True,probability_or_seconds,original_flag_one_only,P(original_ApproachYesNo=1_and_recorded_latency<=t)
+Latency_old_filtered_sensitivity,Approach,original_ApproachYesNo,273.0,23.0,,,False,probability_or_seconds,,
+Count,Vocal,N_after>0,278.0,85.0,,,True,calls_per_group_playback,,distinct_from_VocalYesNo
+Duration,HeadsUp_and_Approach,,,,,,False,seconds,,not_identified_no_formal_numeric_input

@@ -49,6 +49,11 @@ slprj/
 /file_manifest.csv
 /paper/latex/ControlSheet.tex
 
+# Full Q3 audit contains original per-record data; publish its aggregate summary.
+/experiments/reports/Q3_DATA_SEMANTICS_EVIDENCE.md
+# Local plotting helper record; shared run metadata is in q3_release/.
+/figures/q3/**/metadata.json
+
 # Generated data and output: commit selected text reports explicitly if needed
 /data/processed/**
 !/data/processed/**/

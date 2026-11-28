@@ -1,0 +1,113 @@
+{
+  "source_run": "results/q3/final_revision/q3_final_20261128T073430Z",
+  "input_sha256": "1480671419ace67d8e94d819c758f2954550a7a40cba92ad43fd9ffa392a61a5",
+  "seed": 20261127,
+  "code_identity": "Git commit containing this release; source model hashes retained in stage metadata",
+  "release_kind": "aggregate_research_delivery_not_standalone_raw_to_all_models_reproduction",
+  "raw_records_published": false,
+  "bootstrap_arrays_published": false,
+  "cross_module_constraints_pass": false,
+  "future_latency_prediction_intervals_updated": false,
+  "provenance": [
+    {
+      "path": "q4_latency_original_flags_36.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/q4_latency_original_flags_36.csv",
+      "source_sha256": "a19a8dc86203a312fb9a62c93a960fb1f0535130ad9fd88bc0159214b5d77f3d",
+      "transform": "column_selection_only_numeric_lexemes_unchanged",
+      "rows": 3024
+    },
+    {
+      "path": "q4_combination_original_flags_36.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/q4_combination_original_flags_36.csv",
+      "source_sha256": "165fdea4926201c750797aae12710cbafdefa1cacf2bf54aefa3942877558efd",
+      "transform": "column_selection_only_numeric_lexemes_unchanged",
+      "rows": 576
+    },
+    {
+      "path": "q4_count_reused_36.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/q4_count_reused_36.csv",
+      "source_sha256": "7cbfaa482d1a37e0b9bcb926515102609f2c226f8273dd9dfe88d4d4a9354635",
+      "transform": "column_selection_only_numeric_lexemes_unchanged",
+      "rows": 288
+    },
+    {
+      "path": "latency_original_flags_paired.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/latency_original_flags_paired.csv",
+      "source_sha256": "3f2bc6a2e6177122af8b746b05db6b678ccbdb17dde0f2e69360e8e4217ea29a",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "q4_duration_unavailable.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/q4_duration_unavailable.csv",
+      "source_sha256": "af633367bd9e4dec84f65445a008ac12fb6654333e7579b67ac934ff95670724",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "representative_evidence.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/representative_evidence.csv",
+      "source_sha256": "bdf8ebb7355a4899df5ebc1314f338239d66356e543cb7791af45919b8df9da7",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "vocal_cross_module_summary.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/vocal_cross_module_summary.csv",
+      "source_sha256": "ae628c8caa0939a5e59aed39bd80621620a67c49cae59cedae7c9e01acce9173",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "vocal_probability_gap_36_intervals.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/vocal_probability_gap_36_intervals.csv",
+      "source_sha256": "b8e9d47f72e44bc2f2416cf16e2c4c3c43a63f6fde71dc74042c31d3806c9466",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "latency_final_vs_sensitivity.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/latency_final_vs_sensitivity.csv",
+      "source_sha256": "2070743b2f4645bd9853b3a58a50143003d0989287a56b03095f93526cbf9f2b",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "final_estimands_and_populations.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/final_estimands_and_populations.csv",
+      "source_sha256": "7dd0549a60e0330d1163c7bfa7db9f1252adf4192e85755f3f4626f763bf8678",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "final_acceptance.json",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/final_acceptance.json",
+      "source_sha256": "cbcfdbadb44cdd84835a75fa504647f6e44b6462aee2a8e609933072c3c54d48",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "stage1_metadata.json",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/stage1_metadata.json",
+      "source_sha256": "53939a565ce2e02db3c9c774765e8718765eefc901bc074e2f8f4c401e0cace2",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "stage2_metadata.json",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/stage2_metadata.json",
+      "source_sha256": "b7bff861b5a9e2b8104b971a9aa32769e286e8024ca435076e3771aa65b86a23",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "stage3_metadata.json",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/stage3_metadata.json",
+      "source_sha256": "c085901b209f2ea718b8875e4ed0e17596a91d9358fc392f3cc6936505cf62ec",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "stage4_metadata.json",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/stage4_metadata.json",
+      "source_sha256": "db6637c8dada2d829e36b92a1b5afccd9c96717c3bdf82aeb22e9cda62fd6688",
+      "transform": "line_endings_to_LF_only"
+    },
+    {
+      "path": "vocal_probability_conditions_36.csv",
+      "source": "results/q3/final_revision/q3_final_20261128T073430Z/vocal_cross_module_diagnostic.csv",
+      "source_sha256": "d03904f8428aa2a248624f5eb8269d1bd16d5a4eaff0fb8f92cb12c5f3efd321",
+      "transform": "representative36_only_no_raw_or_observed_rows",
+      "rows": 36
+    }
+  ]
+}

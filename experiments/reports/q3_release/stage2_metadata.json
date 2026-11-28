@@ -1,0 +1,23 @@
+{
+  "stage": 2,
+  "input_sha256": "1480671419ace67d8e94d819c758f2954550a7a40cba92ad43fd9ffa392a61a5",
+  "script_sha256": "3041be0237527db3907949fcdaeec1a869ab1f4e8d0933cc5ca65f52d9fa1017",
+  "seed": 20261127,
+  "git_head": "f75abf4905fe8fafe4c9fccfd8ff7f3b52f08122",
+  "working_tree": "uncommitted",
+  "versions": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.1"
+  },
+  "reference_scope": "fixed_supported_type_specific_matched_pairs",
+  "probability_calibration": false,
+  "model_search": false,
+  "accepted": true,
+  "fits_performed": 0,
+  "new_bootstrap_samples": 0,
+  "replicates_recombined_per_unit": 500,
+  "full_latency_date_oof_generated": false
+}

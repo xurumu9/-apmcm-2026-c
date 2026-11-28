@@ -1,0 +1,16 @@
+{
+  "numerical_interface_pass": true,
+  "original_flags_population_n": 278,
+  "original_raw_sha256": "1480671419ace67d8e94d819c758f2954550a7a40cba92ad43fd9ffa392a61a5",
+  "OOF_gate_same_fold_pass": true,
+  "bootstrap_equivalence_checks": 3000,
+  "probability_calibration_applied": false,
+  "cross_module_constraints_pass": false,
+  "common_joint_count_HVA_distribution_available": false,
+  "formal_duration_identified": false,
+  "future_latency_prediction_intervals_updated": false,
+  "software_pass_is_not_scientific_validity": true,
+  "all_saved_time_and_paired_intervals_recalculated": true,
+  "joint_probabilities_unchanged": true,
+  "historical_files_unchanged": 354
+}

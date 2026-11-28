@@ -4,7 +4,7 @@
 
 实际仓库：[xurumu9/-apmcm-2026-c](https://github.com/xurumu9/-apmcm-2026-c)，名称开头有连字符。可见性 Private（2026-11-26 首次推送时核实），默认分支 main。初始提交 7332fff 已推送并核对远端。
 
-保持私有，变更需队内明确决定。通过 Settings → Collaborators 邀请成员真实账号，P1/P2/P3 只是代号。以下为团队约定，尚未配置 GitHub 分支保护、强制审核或 CI，不得宣称平台已强制执行。
+2026-11-28通过GitHub API核实仓库现为Public；用户明确确认保持公开并上传P3分支。上段Private为首次推送时的历史记录，当前以Public为准。通过 Settings → Collaborators 邀请成员真实账号，P1/P2/P3 只是代号。以下为团队约定，尚未配置 GitHub 分支保护、强制审核或 CI，不得宣称平台已强制执行。
 
 ## 日常协作
 
