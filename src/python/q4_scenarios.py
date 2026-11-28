@@ -1,15 +1,18 @@
-"""Reproduce Q4 illustrative scores from version-pinned, aggregated Q2/Q3 outputs."""
+"""Reproduce Q4 illustrative scores from SHA-verified shared Q2/Q3 outputs."""
 import csv
 import hashlib
 import io
 import json
-import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "results/q4"
 Q2 = ("6306e8e", "experiments/reports/q2_2_descriptive_summary.csv")
 Q3 = ("9a7e06f", "experiments/reports/q3_release/q4_combination_original_flags_36.csv")
+EXPECTED_SHA256 = {
+    Q2: "02e24a179dae34a5428060e0ddcb885dcb718a153e2a0656eeadeeafe91d0201",
+    Q3: "0060ed5485cc3ece4916ad3a675ae4c9e950e655ee4d94322e958157a99da2df",
+}
 CALLS = ("flat", "mod", "tv")
 DISTANCES = (4, 8, 16, 32, 64, 128, 256)
 WEIGHTS = {"equal": (1/3, 1/3, 1/3), "head_focus": (.6, .2, .2),
@@ -17,8 +20,12 @@ WEIGHTS = {"equal": (1/3, 1/3, 1/3), "head_focus": (.6, .2, .2),
 
 
 def source(ref):
-    data = subprocess.check_output(["git", "show", f"{ref[0]}:{ref[1]}"], cwd=ROOT)
-    return list(csv.DictReader(io.StringIO(data.decode("utf-8-sig")))), hashlib.sha256(data).hexdigest()
+    path = ROOT / ref[1]
+    data = path.read_bytes()
+    digest = hashlib.sha256(data).hexdigest()
+    if digest != EXPECTED_SHA256[ref]:
+        raise ValueError(f"Input hash mismatch: {ref[1]}; expected {EXPECTED_SHA256[ref]}, got {digest}")
+    return list(csv.DictReader(io.StringIO(data.decode("utf-8-sig")))), digest
 
 
 def nonincreasing(values):

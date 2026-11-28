@@ -4,7 +4,7 @@
 
 研究链为：**声学特征与分类 → 传播保真度与范围 → 行为响应 → 通信效能与保护情景**。
 
-当前状态：材料归档与首轮结构审计完成、私有仓库框架已建立；模型尚未拟合，论文仍为工作模板。计划不代表研究已完成。
+当前状态：材料已归档并有模型实验记录；Q3 已完成阶段 1–4、阶段 5 的受限分析和阶段 6 区间交付，真实持续时间编码仍未核实。论文仍为工作模板，各问实际成果以研究报告为准，计划不代表完成。
 
 ## 项目导航
 
@@ -12,9 +12,20 @@
 |---|---|
 | [团队任务计划（统一入口）](docs/TEAM_PLAN.md) | 每项任务的工作、成员、截止日期和交付成果 |
 | [总体研究框架](docs/PROJECT_PLAN.md) | 四问依赖与研究要求 |
+| [四问接口与运行](docs/FOUR_QUESTION_INTERFACE.md) | 各问输入、输出、校验和复现限制 |
+| [四问论文主体草稿](paper/latex/four_question_integrated_draft.md) | 四问综合内容，尚未编译为最终论文 |
 | [数据接口](docs/TEAM_ROLES.md) | 已有格式与交付路径，不另列分工 |
 | [模型决策记录](docs/MODELING_DECISIONS.md) | 候选模型、选择依据和假设 |
 | [数据字典与审计](data/README.md) | 字段、缺失、冲突和处理状态 |
+| [Q3 六阶段研究与验收](experiments/reports/q3_staged_implementation.md) | 各阶段实现、验证证据与仍未解决的问题 |
+| [Q3 第一轮科学研究综述](experiments/reports/Q3_FIRST_ROUND_RESEARCH_SYNTHESIS.md) | [Response Pattern](experiments/reports/Q3_FIRST_ROUND_RESEARCH_SYNTHESIS.md#1-response-pattern)、[Response Intensity](experiments/reports/Q3_FIRST_ROUND_RESEARCH_SYNTHESIS.md#2-response-intensity)、[Response Latency](experiments/reports/Q3_FIRST_ROUND_RESEARCH_SYNTHESIS.md#3-response-latency)；模块接口与第二轮证据清单 |
+| [Q3 第二轮研究方案](experiments/reports/Q3_SECOND_ROUND_RESEARCH_PLAN.md) | 数据/设计证据、三个科学模块、预定比较和分阶段执行要求 |
+| [Q3 第二轮研究成果](experiments/reports/Q3_SECOND_ROUND_RESEARCH_SYNTHESIS.md) | R2-1～6实际交付、三模块科学回答、有限对照与Q4输入；保留固定基线，真实持续时间仍不可识别 |
+| [Q3 最终研究综述与Q4接口](experiments/reports/Q3_FINAL_RESEARCH_SYNTHESIS.md) | 最新口径：Latency原标记278行为主，旧筛选为敏感性；发声概率跨模块不相容的诊断、语义与使用限制 |
+| [Q3交付与复用](docs/Q3_REPRODUCIBILITY.md) | 依赖、测试、克隆后审核、冻结输入恢复和最终四步重放 |
+| [Q4仓库共享接口](experiments/reports/q3_release/Q4_FINAL_INPUT_NOTES.md) | 可直接审阅的聚合预测、区间与限制，不依赖被忽略的本地results链接 |
+| [Q3语义共享摘要](experiments/reports/Q3_DATA_SEMANTICS_SUMMARY.md) | 数据哈希与语义证据分级；原始逐行审计完整版仅本地保留 |
+| [Q3 综合区间与 Q4 接口](experiments/reports/q3_uncertainty_delivery.md) | Bootstrap、未来预测范围、人口/支持与下游使用说明 |
 | [GitHub 协作](GITHUB_WORKFLOW.md) | 可见性、分支和 PR |
 | [Codex 工作规范](AGENTS.md) | AI 操作、验证与交付约定 |
 | [AI 使用记录](AI_usage/README.md) | 关键交互、采纳与人工核验 |
@@ -61,10 +72,10 @@ AI 规定来源：https://m.saikr.com/contest/notice_detail/50212 （2026-11-04 
 
 1. 查看 TEAM_PLAN.md 的任务与日期，并阅读对应研究方案和数据字典。
 2. 恢复本地附件并统一审计规则，再实现基线。
-3. 默认 Python，按需建立模块；可靠 MATLAB 实现按共同 CSV 接口交付。实际引入依赖时记录版本，目前没有模型入口。
+3. 默认 Python，具体入口见 src/python/README.md 和各问实验报告；可靠 MATLAB 实现按共同 CSV 接口交付，实际依赖与版本记录在运行元数据。
 4. 从最新 main 建任务分支，交付代码、实验记录、精简结果和章节说明，按需通过 PR 合并。
 
-results/q1/ 至 results/q4/ 是后续本地路径，尚未生成；供审核的精简汇总和元数据放 experiments/reports/，不复制逐条原始记录。
+各问本地产物写入 results/q1/ 至 results/q4/，实际已生成版本以各问报告为准；供审阅的精简汇总和元数据放 experiments/reports/，不复制逐条原始记录。
 
 实际仓库：[xurumu9/-apmcm-2026-c](https://github.com/xurumu9/-apmcm-2026-c)。2026-11-27 核实时为公开仓库；P2 对已生成结果的共享例外见 [Q2 结果说明](results/q2/README.md)。
 

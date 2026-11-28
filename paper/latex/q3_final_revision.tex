@@ -1,0 +1,70 @@
+% Final Q3 scientific wording; standalone fragment for review.
+% Not compiled and not automatically inserted into the historical template.
+\section{Behavioural responses to sound playback}
+\paragraph{Operational response definitions.}
+We retained all 278 records from 139 paired experiments and used the original
+head-up, vocal and approach flags to define the eight joint response states.
+In this dataset, the vocal flag is exactly equivalent to
+$N_{\mathrm{after}}>N_{\mathrm{before}}$.
+It therefore differs from the presence of any recorded call. The zero state
+means that none of the original flags is positive; it does not establish
+absence of calling or perception. The original annotation procedure remains
+unconfirmed. Earlier analyses excluding records with a zero flag and a recorded
+latency are retained as population-selection sensitivity analyses.
+
+\paragraph{Response pattern and intensity.}
+Within the supported type-specific matched reference populations, Flat, Mod and
+TV playback were associated with increases of 40.25, 39.82 and 47.02 percentage
+points in the probability of any original response flag, respectively.
+Their pointwise 95\% experiment-cluster bootstrap intervals were
+[28.84,52.34], [27.08,53.29] and [36.26,57.71] percentage points.
+The corresponding adjusted differences in expected group call counts were
+1.178 [0.764,1.652], 1.706 [0.830,2.706] and 1.481 [1.060,2.000] calls per
+playback. These comparisons use different type-specific reference populations
+of 30, 20 and 39 pairs, so their magnitudes do not directly establish a ranking
+of sound types. Count predictions remain somewhat low in the upper tail.
+The original fixed NB2 penalty was retained after the limited sensitivity test.
+True behavioural duration cannot currently be identified from the unresolved
+60-second encoding.
+
+\paragraph{Window probabilities and recorded response times.}
+Latency window probabilities are the marginals of the same joint flag model.
+Head-up and vocal-label probabilities were higher for all three natural sounds.
+Approach differences were positive for Mod and TV. The Flat approach contrast
+was 5.33 [0.72,12.10] percentage points in the original-flag analysis, but its
+interval crossed zero in the earlier filtered-population sensitivity analysis;
+this result is therefore sensitive to the analysis rule.
+Conditional recorded times were modelled separately using call type only.
+There was no reliable evidence that natural playback generally shortened these
+times. The Control condition had no positive Approach time observations;
+conditional time predictions there borrow model information and are not
+observed Control response times.
+
+For vocal behaviour, the reported cumulative quantity is
+\[
+ F_V(t\mid x)=P\{E_V=1,\ L_V^{\mathrm{recorded}}\leq t\mid x\},
+ \qquad E_V=I(N_{\mathrm{after}}>N_{\mathrm{before}}).
+\]
+It describes a final positive vocal-increase label together with a recorded
+vocal time no greater than $t$. It is not the distribution of the first time
+the cumulative number of calls exceeds baseline. The final increase criterion
+uses the entire observation window. Likewise, recorded zero latencies are not
+assumed to be exact instantaneous biological responses.
+
+\paragraph{Cross-module compatibility and downstream use.}
+Let $q=P(N_{\mathrm{after}}>0\mid x)$ and $p_V=P(E_V=1\mid x)$.
+The event definitions imply $p_V\leq q$, with equality when baseline count is
+zero. Separately fitted models did not enforce these constraints. All 36
+representative scenarios used a zero baseline; ten had $p_V>q$, with a maximum
+excess of 6.93 percentage points. The mean absolute discrepancy was 1.75
+percentage points. The NB2 count distribution also supplies an independent
+estimate of the same increase event, using its truncated upper tail.
+No probabilities were calibrated or replaced. The response and count modules
+may be reported separately, but they do not constitute a coherent joint
+generative model for behaviour flags and call counts. Q4 must not multiply
+these probabilities or infer new joint events without addressing this limitation.
+
+All intervals are exploratory, pointwise, and conditional on fixed model and
+analysis rules. Grouped prediction validation does not establish causality or
+resolve unknown annotation mechanisms. The actual within-pair interval,
+underlying recording identities and duration coding remain unresolved.

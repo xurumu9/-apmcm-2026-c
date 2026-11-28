@@ -17,7 +17,7 @@ Python 为默认整合语言；可靠 MATLAB 实现可放 src/matlab/，以同�
 
 ## 计划交付契约
 
-以下产物尚未生成。变更文件名或字段须更新契约并通知下游。
+以下为最低交付契约，实际生成情况以各问研究报告为准。Q3 已有版本化交付，见下方说明；变更文件名或字段须明确记录。
 
 | 本地路径 | 最低内容 |
 |---|---|
@@ -33,5 +33,9 @@ Python 为默认整合语言；可靠 MATLAB 实现可放 src/matlab/，以同�
 | results/q4/scenario_summary.csv | 类型、情境/权重、距离、规模、scenario、指标版本、效能/半径/人数估计及区间 |
 
 ## 数据使用说明
+
+Q3 本地交付为 `results/q3/q3_stage6_full_20261127T133654Z/`，详见 [区间与接口说明](../experiments/reports/q3_uncertainty_delivery.md)。`combination_predictions.csv` 保留 HVA、probability/lower/upper；`latency_intensity_predictions.csv` 按 outcome/estimand 区分 estimate/lower/upper 及人群，不能把条件均值、中位数、正计数概率和原行为概率混用。未来实验范围另表，真实持续时间以缺失加原因保留。
+
+expID 为主分析，natural_track 是另套敏感性，筛选后使用，不将重复行累加。传递非线性不确定性时使用同单位、同重复下的完整向量，不能独立抽各格区间拼接为联合概率。完整重复保存在本地 npz；细节、限制及证据均在研究报告，不新增分工。
 
 检查单位、范围、样本量和版本，不拼接不同规则或情景的无标识产物。异常保留原值并记录依据；模型有真实验证证据才称为采用。完整产物经队内私有渠道传递，Git 保留代码、研究记录和精简汇总。
